@@ -10,7 +10,7 @@ import persistence.PersistenceUtil;
 
 public class DoadorDAO {
 
-	Session session = new PersistenceUtil().getSession();
+	Session session = PersistenceUtil.getSession();
 	
 	public List<DoadorDTO> getDoadorList() {
 		
